@@ -8,30 +8,37 @@
 // import 'package:basic_flutter/widgets/08_mapping.dart';
 // import 'package:basic_flutter/widgets/09_date_fotmat.dart';
 // import 'package:basic_flutter/widgets/testiq.dart';
-import 'package:basic_flutter/widgets/10_tabbar.dart';
+// import 'package:basic_flutter/widgets/10_tabbar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final List<Tab> myTab = [
-    const Tab(
-      icon: Icon(Icons.add_a_photo),
-    ),
-    const Tab(
-      icon: Icon(Icons.ac_unit),
-    ),
-    const Tab(
-      icon: Icon(Icons.accessibility_new),
-    ),
-  ];
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return TabBars();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Basic dart",
+            style: TextStyle(
+              fontSize: 30,
+              fontFamily: GoogleFonts.abel().fontFamily,
+              color: Colors.white,
+            ),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.blue,
+        ),
+        // body: ,
+      ),
+    );
   }
 }
