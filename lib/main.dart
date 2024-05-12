@@ -9,6 +9,12 @@
 // import 'package:basic_flutter/widgets/09_date_fotmat.dart';
 // import 'package:basic_flutter/widgets/testiq.dart';
 // import 'package:basic_flutter/widgets/10_tabbar.dart';
+// import 'package:basic_flutter/widgets/11_text_field.dart';
+// import 'package:basic_flutter/widgets/12_dekorasi_text_field.dart';
+// import 'package:basic_flutter/widgets/13_penggunaan_text_field.dart';
+// import 'package:basic_flutter/widgets/14_grid_view.dart';
+import 'package:basic_flutter/widgets/15_dialog.dart';
+import 'package:basic_flutter/widgets/16_dismissible.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:google_fonts/google_fonts.dart';
@@ -37,7 +43,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.blue,
         ),
-        // body: ,
+        body: Dismisibels(),
       ),
     );
   }
