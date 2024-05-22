@@ -22,3 +22,5 @@ flutter:
   uses-material-design: true
   assets:
     - images/image.jpg
+    - images/star.png
+    - images/smile.png
