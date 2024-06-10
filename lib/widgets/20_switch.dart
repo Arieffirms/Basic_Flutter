@@ -27,8 +27,8 @@ class _SwitchLearnState extends State<SwitchLearn> {
                 inactiveThumbColor: Colors.red,
                 activeTrackColor: Colors.amber,
                 inactiveTrackColor: Colors.black,
-                inactiveThumbImage: AssetImage('images/star.png'),
-                activeThumbImage: AssetImage('images/smile.png'),
+                inactiveThumbImage: const AssetImage('images/star.png'),
+                activeThumbImage: const AssetImage('images/smile.png'),
                 value: statusSwitch,
                 onChanged: (value) {
                   setState(
@@ -36,12 +36,12 @@ class _SwitchLearnState extends State<SwitchLearn> {
                       statusSwitch = !statusSwitch;
                     },
                   );
-                  print(statusSwitch);
+                  // print(statusSwitch);
                 },
               ),
             ),
             Text(
-              statusSwitch == true ? "berhasil di aktifkan" : "yahh matii",
+              statusSwitch == true ? "Switch ON" : "Switch OFF",
               style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ],

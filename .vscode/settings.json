@@ -1,5 +1,7 @@
 {
-    "dart.previewFlutterUiGuides": true,
-    "dart.previewFlutterUiGuidesCustomTracking": true,
-    "workbench.editor.enablePreviewFromQuickOpen": true
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "CodeGPT.apiKey": "CodeGPT Plus Beta",
+  "cmake.sourceDirectory": "D:/Code/Learn-Flutter/basic_flutter/linux"
 }

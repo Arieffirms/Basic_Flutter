@@ -49,7 +49,7 @@ class PageDua extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("data"),
-        leading: Container(),
+        // leading: Container(),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

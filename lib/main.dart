@@ -19,46 +19,31 @@
 // import 'package:basic_flutter/widgets/17_navigatior.dart';
 // import 'package:basic_flutter/widgets/18_router.dart';
 // import 'package:basic_flutter/widgets/19_drawer.dart';
-import 'package:basic_flutter/widgets/20_switch.dart';
-import 'package:basic_flutter/widgets/21_model.dart';
+// import 'package:basic_flutter/widgets/20_switch.dart';
+// import 'package:google_fonts/google_fonts.dart';
+// import 'package:basic_flutter/pages/home_page.dart';
+// import 'package:basic_flutter/widgets/21_theme.dart';
+import 'package:basic_flutter/widgets/23.media_querry.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    // DeviceOrientation.portraitDown,
+    // DeviceOrientation.portraitUp,
+  ]);
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: HomePage(),
-//     );
-//   }
-// }
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Basic dart",
-            style: TextStyle(
-              fontSize: 30,
-              fontFamily: GoogleFonts.badScript().fontFamily,
-              color: Colors.white,
-            ),
-          ),
-          centerTitle: true,
-          backgroundColor: Colors.blue,
-        ),
-        body: const ModulLearn(),
-      ),
+      home: MediaQuerrys(),
     );
   }
 }

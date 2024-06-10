@@ -7,8 +7,8 @@ class ColumnRows extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           const Text("Di bawah adaah row atau baris"),
           Container(
@@ -39,7 +39,7 @@ class ColumnRows extends StatelessWidget {
           // untuk pola dalam rows
           const Text("Di bawah adaah row atau baris"),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Container(
